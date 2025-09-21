@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Agrawal - Web Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Parth Agrawal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn theme-toggle-btn">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        <section class="hero d-flex align-items-center">
+            <div class="container position-relative">
+                <h1 class="display-1 fw-bold">Parth Agrawal</h1>
+                <p class="lead fw-light mt-3">Creative Web Developer</p>
+                <a href="#projects" class="btn btn-primary btn-lg mt-4">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">About Me</h2>
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-4 text-center">
+                        <img src="./images/me.jpg" alt="Parth Agrawal" class="profile-img shadow-lg">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="fs-5 mb-4">Hello! I'm Parth, a dedicated web developer with a passion for creating beautiful and intuitive digital experiences. With a strong background in front-end development, I specialize in crafting responsive websites and applications that not only look great but also perform flawlessly.</p>
+                        <p class="fs-5">I thrive on turning complex challenges into simple, elegant solutions and am always eager to learn new technologies to push the boundaries of what's possible on the web. My journey in web development started a year ago, and since then, I've worked on diverse projects ranging from interactive games to dynamic web applications. I'm committed to delivering high-quality code and exceptional user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">My Tech Stack</h2>
+                <div class="row g-5 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-react"></i><span>React</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-python"></i><span>Flask</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Projects</h2>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card">
+                            <img src="./images/sudoku.jpeg" alt="Sudoku Solver">
+                            <div class="project-info">
+                                <h5>Sudoku Solver</h5>
+                                <p>An interactive application that solves Sudoku puzzles using backtracking algorithm, built with JavaScript and Python Flask for a seamless user experience.</p>
+                                <a href="https://sudoku-solver-nf04.onrender.com/" class="btn btn-outline-light project-btn" target="_blank" rel="noopener noreferrer">Visit Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card">
+                            <img src="./images/blog.png" alt="Blog Website">
+                            <div class="project-info">
+                                <h5>Blog Website</h5>
+                                <p>A dynamic blog platform with user authentication, post creation, and commenting features, developed using Flask and Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card">
+                            <img src="./images/tindog.png" alt="TinDog">
+                            <div class="project-info">
+                                <h5>TinDog</h5>
+                                <p>A fun Tinder-like app for dogs to find matches, featuring responsive design and interactive elements, built with HTML, CSS, and Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card">
+                            <img src="./images/calc.jpeg" alt="Scientific Calculator">
+                            <div class="project-info">
+                                <h5>Calculator</h5>
+                                <p>A sleek scientific calculator built with a 3D design, featuring advanced math functions and a calculation history feature.</p>
+                                <a href="https://calccore.netlify.app/" class="btn btn-outline-light project-btn" target="_blank" rel="noopener noreferrer">Visit Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="project-card">
+                            <img src="./images/fluid.jpeg" alt="Fluid Website Template">
+                            <div class="project-info">
+                                <h5>Fluid Website Template</h5>
+                                <p>A modern and responsive website template featuring a fluid layout and Glassmorphism, built with HTML, CSS, and Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section bg-light text-center">
+            <div class="container">
+                <h2 class="section-title">My Resume</h2>
+                <p class="lead mb-5">Interested in learning more about my professional experience? Download my resume.</p>
+                <a href="Parth_Agrawal_Resume.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer"><i class="fas fa-download me-2"></i>Download Resume</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="lead mb-5">I'm currently available for freelance work and open to new opportunities. <br>Let's create something amazing together!</p>
+                <form class="contact-form mx-auto">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+                                <label for="floatingName">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email" required>
+                                <label for="floatingEmail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea" style="height: 150px" required></textarea>
+                                <label for="floatingTextarea">Your Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="https://github.com/ParE9900" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/parth-agrawal3407/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 Parth Agrawal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
